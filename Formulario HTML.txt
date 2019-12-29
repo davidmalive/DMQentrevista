@@ -1,0 +1,11 @@
+Crear un formulario en un fichero .html con los siguientes campos:
+● Usuario
+● Contraseña
+● Botón enviar
+Al enviarse el formulario, se comprobará por javascript que:
+● el campo usuario y contraseña tengan texto
+● la contraseña tenga un tamaño superior a 6 caracteres
+Si todo está correcto, se mostrará un mensaje de confirmación indicando “Correcto,
+¿proceder con el registro?”. Si se acepta, se mostrará un aviso diciendo “Registrado!”. Si
+no, no hacer nada.
+En caso que el formulario no esté correcto, se mostrará un mensaje “Error!”.

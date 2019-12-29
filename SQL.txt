@@ -1,0 +1,8 @@
+Escribir el SQL necesario para ejecutar las siguientes consultas:
+1) Listar todos los jugadores junto con su equipo, ordenados por el nombre del equipo y el
+nombre del jugador.
+2) Listar el total de goles marcados por cada equipo, ordenado por el total de goles.
+3) Insertar un nuevo jugador
+4) Borrar el jugador recién creado
+5) Incrementar los goles de un jugador en 5
+6) Listar el máximo goleador de cada equipo:

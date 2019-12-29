@@ -1,0 +1,6 @@
+Cree un fichero .html que haga lo siguiente utilizando la librería jQuery:
+Se mostrarán 5 cuadrados azules. Al pulsar sobre uno, se cambiará el texto de este y se
+indicará el nº de cuadros previos al pulsado. Además, cada cuadrado anterior se coloreará
+de naranja.
+Al pulsar sobre otro cuadro, se repetirá el proceso (sólo debe de haber 1 cuadro con texto y
+desde el cuadro pulsado a la derecha han de estar azules)

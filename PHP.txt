@@ -1,0 +1,10 @@
+Crear un fichero .php que muestre un formulario. Dicho formulario tendrá un campo de
+texto con la etiqueta “Lista” y un botón de enviar. En el campo lista se espera que lleguen
+secuencias de números separados por comas.
+Al enviar el formulario (por POST), se leerá el campo “lista” y para cada valor recibido, se
+pintará un elemento de lista con dicho valor.
+Si se introduce 3,4,7,9, se tendrá que mostrar
+● 3
+● 4
+● 7
+● 9

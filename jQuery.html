@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery</title>
+		<style type="text/css">
+			.contenedor { width: 700px; height: 120px; margin: 0 auto; }
+			.cuadrado { width: 80px; height: 80px; display: inline-block; position: relative; vertical-align: middle; background-color: #33C4FF; }
+			.numero { width: 15px; height: 15px; display: block; position: absolute; top: 45%; left: 45%; }
+		</style>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="cuadrado">
+				<span class="numero"></span>
+			</div>
+			<div class="cuadrado">
+				<span class="numero"></span>
+			</div>
+			<div class="cuadrado">
+				<span class="numero"></span>
+			</div>
+			<div class="cuadrado">
+				<span class="numero"></span>
+			</div>
+			<div class="cuadrado">
+				<span class="numero"></span>
+			</div>
+		</div>
+
+		<script>
+			jQuery(".cuadrado").click(function() {
+				// Al hacer el segundo click cambio el background de los cuadrados a azul
+				jQuery(this).siblings().css("background-color", "#33C4FF");
+				// Al hacer el segundo click borro el texto de los cuadrados
+				jQuery(this).siblings().children().empty();
+
+				// Si hago click en el primer cuadrado lo pinto de azul
+				if (jQuery(this).prevAll().length === 0 ) {
+					jQuery(this).css("background-color", "#33C4FF");
+				} else {
+					// Pinto de azul el cuadrado en el que hago click
+					jQuery(this).css("background-color", "#33C4FF");
+					// Los cuadrados anteriors al clickado los pinto de naranja
+					jQuery(this).prevAll().css("background-color", "orange");
+				}
+
+				// Escribo cuantos cuadrados hay pintados de color naranja anterior al clickado
+				jQuery(this).children().text(jQuery(this).prevAll().length);
+			});
+		</script>
+
+	</body>
+</html>

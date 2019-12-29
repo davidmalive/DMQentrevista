@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario</title>
+	</head>
+	<body>
+		<div id="contenedor" style="width:500px; margin:50px auto;">
+			<form id ="formulario" name="formulario" method="post">
+				<input id="usuario" type="text" name="usuario" placeholder="Usuario">
+				</br>
+				<input id="contrasena" type="password" name="contrasena" placeholder="Contraseña">
+				</br>
+				<input id="enviar" type="submit" name="enviar" value="Enviar">
+			</form>
+		</div>
+
+		<script type="text/javascript">
+
+			var formulario = document.getElementsByName('formulario')[0];
+			var validar = function(e) {
+				// Compruebo que el campo usuario y el campo contraseña contengan texto
+				if (formulario.usuario.value != null && formulario.usuario.value.trim() != '' && formulario.contrasena.value !== null && formulario.contrasena.value.trim() != '' && formulario.contrasena.value.length > 6) {
+					var registro = confirm("Correcto, ¿proceder con el registro?");
+					if (registro) {
+						alert("Registrado!");
+					} else {
+						e.preventDefault();
+					}
+				}else {
+					alert("Error!");
+					e.preventDefault();
+				}
+			}
+
+			formulario.addEventListener('submit', validar);
+
+		</script>
+	</body>
+</html>
