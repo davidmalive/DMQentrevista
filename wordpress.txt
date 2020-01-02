@@ -1,0 +1,17 @@
+a) Crear un plugin de Wordpress que realice lo siguiente:
+* Añadir el siguiente código en la etiqueta <head> de la web:
+<!--
+plugin de pruebas
+-->
+* Crear una página en la sección de administración de WP, que se enlace desde el menú y
+que al acceder muestre lo siguiente:
+El usuario logado es <USUARIO_LOGADO>
+* Añada un shortcode que al utilizarlo muestre la fecha actual
+* Añadir un nuevo campo para la edición de los posts que sea:
+“Estado de aprobación” y cuyos valores puedan ser: Aprobado, Pendiente, Rechazado.
+* Añadir una ruta Ajax que al invocarse te devuelva el número de usuarios que existen en la
+web
+b) Crear un tema de wordpress con 2 plantillas que hacen lo siguiente:
+* index.php - Lista los títulos y los enlaces a las últimas noticias de la web. Pinta el nº de
+usuarios que existen en la web (utilizando la ruta Ajax declarada anteriormente)
+* category.php - Lista todas las categorías que existen en la web con su nombre y enlace
